@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
 :root {
   --Dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -5,6 +7,7 @@
 }
 html {
   background-color: var(--Dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
 }
 body {
   background-image: url(./images/bg-pattern-top.svg),
@@ -12,7 +15,8 @@ body {
   background-position: initial;
   background-position: right 100vh bottom 30vh, left 100vh top 40vh;
   background-repeat: no-repeat;
-
+  margin: 0rem 0rem;
+  padding: 0rem 0rem;
   height: 100vh;
 }
 #container {
@@ -24,12 +28,66 @@ body {
 #profile-card {
   background-color: var(--Dark-grayish-blue);
   height: 20rem;
-  width: 20rem;
+  width: 18rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 #profile-background {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+#profile-image {
+  height: 95px;
+  width: 95px;
+  background-color: white;
+  position: relative;
+  top: -50px;
+  left: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-image: url("./images/image-victor.jpg");
+}
+#profile-head {
+  font-size: larger;
+  font-weight: bolder;
+  left: 90px;
+  top: -40px;
+  position: relative;
+}
+#age {
+  color: var(--Dark-grayish-blue);
+  font-weight: lighter;
+}
+#location {
+  color: var(--Dark-grayish-blue);
+  /* font-size: larger; */
+  position: relative;
+  left: -23px;
+  top: -10px;
+}
+#line {
+  background-color: var(--Dark-grayish-blue);
+}
+.counter {
+  font-weight: bold;
+  position: relative;
+
+  padding: 1rem 1rem;
+  margin-left: 1.5rem;
+}
+.counterBottom {
+  color: var(--Dark-grayish-blue);
+  font-size: smaller;
+  font-weight: normal;
+  margin-left: 1.5rem;
+}
+#photos-bottom {
+  margin-left: 3.5rem;
+}
+#likes-bottom {
+  margin-left: 3rem;
+}
+#follower-bottom {
 }
