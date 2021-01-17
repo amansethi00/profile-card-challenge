@@ -1,0 +1,35 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+html {
+  background-color: var(--Dark-cyan);
+}
+body {
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: initial;
+  background-position: right 100vh bottom 30vh, left 100vh top 40vh;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+#container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile-card {
+  background-color: var(--Dark-grayish-blue);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#profile-background {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
